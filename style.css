@@ -1,0 +1,58 @@
+/*============
+Page variables
+==============*/
+
+:root {
+  /*color scheme*/
+  --col-contrast-dark: rgb(34, 87, 122);
+  --col-highlight-dark: rgb(56, 163, 165);
+  --col-contrast-light: rgb(87, 204, 153);
+  --col-highlight-light: rgb(128, 237, 153);
+  --col-main: rgb(48, 45, 45);
+  --col-text: rgb(242, 243, 245);
+
+  /*fonts*/
+  --font-main: Verdana, sans-serif;
+  --font-heading: "Macondo", cursive;
+}
+
+/*======================================
+  Back to Basics (reset browser defaults)
+  =======================================*/
+html {
+  overscroll-behavior: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*====
+LAYOUT
+======*/
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  border: 1px red;
+}
