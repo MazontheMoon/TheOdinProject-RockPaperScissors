@@ -24,13 +24,13 @@ function playRound(humanChoice) {
       scorePlayer.textContent = humanScore;
       break;
     } else if (computerChoice == "PAPER") {
-      score.textContent = `${humanChoice} draws with ${computerChoice}`;
+      score.textContent = `${humanChoice} loses to ${computerChoice}`;
       computerScore++;
       scoreComputer.textContent = computerScore;
       scorePlayer.textContent = humanScore;
       break;
     } else {
-      score.textContent = `${humanChoice} draws with ${computerChoice}`;
+      score.textContent = `${humanChoice} beats ${computerChoice}`;
       humanScore++;
       scoreComputer.textContent = computerScore;
       scorePlayer.textContent = humanScore;
@@ -50,7 +50,7 @@ function playRound(humanChoice) {
       scorePlayer.textContent = humanScore;
       break;
     } else {
-      score.textContent = `${humanChoice} loses to ${computerChoice}`;
+      score.textContent = `${humanChoice} beats ${computerChoice}`;
       humanScore++;
       scoreComputer.textContent = computerScore;
       scorePlayer.textContent = humanScore;
