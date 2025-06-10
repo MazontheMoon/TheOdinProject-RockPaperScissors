@@ -17,6 +17,7 @@ btnScissors.addEventListener("click", () => playRound("SCISSORS"));
 function playRound(humanChoice) {
   computerChoice = getComputerChoice();
   score.textContent = "";
+  score.classList.remove("winner");
   while (humanChoice == "ROCK") {
     if (computerChoice == "ROCK") {
       score.textContent += `${humanChoice} draws with ${computerChoice}`;
@@ -80,6 +81,7 @@ function playRound(humanChoice) {
 
   if (humanScore == 5) {
     score.textContent = "Player wins Game!";
+    score.classList.add("winner");
     humanScore = 0;
     computerScore = 0;
     scoreComputer.textContent = computerScore;
@@ -88,6 +90,7 @@ function playRound(humanChoice) {
 
   if (computerScore == 5) {
     score.textContent = "Computer wins Game!";
+    score.classList.add("winner");
     humanScore = 0;
     computerScore = 0;
     scoreComputer.textContent = computerScore;
