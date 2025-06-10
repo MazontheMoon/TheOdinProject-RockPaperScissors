@@ -1,0 +1,122 @@
+/*============
+Page variables
+==============*/
+
+:root {
+  /*color scheme*/
+
+  /*fonts*/
+  --fnt-main: Verdana, sans-serif;
+  --fnt-heading: "Henny Penny", cursive;
+}
+
+/*======================================
+  Back to Basics (reset browser defaults)
+ =======================================*/
+html {
+  overscroll-behavior: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*====
+LAYOUT
+======*/
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: space-between;
+  font-family: var(--fnt-main);
+}
+
+header {
+  flex: 0 0 80px;
+}
+
+h1 {
+  font-family: var(--fnt-heading);
+  font-size: clamp(1.25rem, 2.5rem, 3.2rem);
+  text-align: center;
+  padding: 0.5rem;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  word-spacing: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 75dvh;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  flex: 2 1 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: space-evenly;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+#scoreboard {
+  margin: 0.5rem 0;
+  width: 380px;
+}
+
+#scoreboard table {
+}
+
+#scoreboard table td {
+}
+
+button {
+  flex: 1 1 100px;
+  border: 2px solid white;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+button svg {
+  flex: 1;
+  align-self: center;
+  margin: 0.5rem;
+}
+
+#scoreboard {
+  flex: 1 1 50%;
+}
+
+.winner {
+  color: red;
+}
+footer {
+  flex: 0 0 20px;
+  text-align: center;
+  font-size: smaller;
+}
